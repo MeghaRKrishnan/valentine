@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chakku & Forever ❤️</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-top: 40px;
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.2);
+            padding: 25px;
+            margin: 30px auto;
+            width: 85%;
+            border-radius: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 10px;
+            border: none;
+            background: white;
+            color: #ff4f81;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ffe6f0;
+        }
+
+        .heart {
+            font-size: 40px;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio autoplay loop>
+    <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<div class="section">
+    <h1>Happy Valentine's Day, Chakku ❤️</h1>
+    <p class="heart">💖</p>
+    <h2>Our First Valentine As Husband & Wife 💍</h2>
+</div>
+
+<div class="section box">
+    <h2>Our Love Story 📖</h2>
+    <p>
+        We met in school…  
+        Two innocent hearts who had no idea we were building a forever.  
+
+        In 2016, we fell in love ❤️  
+        And on 14th September 2025, I married my best friend.  
+
+        From school corridors…  
+        To wedding vows…  
+        From crush to husband…  
+        You have always been my Chakku 🥹💕  
+
+        This is our first Valentine's Day after marriage…  
+        And I still choose you. Every single day.
+    </p>
+</div>
+
+<div class="section box">
+    <h2>Our Beautiful Memories 📸</h2>
+
+    <div class="gallery">
+        <img src="photo1.jpeg">
+        <img src="photo2.jpeg">
+        <img src="photo3.jpeg">
+        <img src="photo4.jpeg">
+    </div>
+
+    <p>Every picture tells a story. Every moment with you feels like home. 💕</p>
+</div>
+
+<div class="section box">
+    <h2>Why I Love You 💖</h2>
+    <p>
+        Because you saw me grow.  
+        Because you never gave up on us.  
+        Because you make ordinary days magical.  
+        Because you are my peace.  
+        Because you are mine.  
+    </p>
+</div>
+
+<div class="section box">
+    <h2>Click For My Promise 💌</h2>
+    <button onclick="showPromise()">Click Me</button>
+    <p id="promise"></p>
+</div>
+
+<script>
+function showPromise() {
+    document.getElementById("promise").innerHTML =
+    "Chakku, I promise to love you in every version of life. In laughter, in silence, in chaos, in dreams. This is just the beginning of our forever. Happy First Valentine After Marriage 💍❤️";
+}
+</script>
+
+</body>
+</html>
