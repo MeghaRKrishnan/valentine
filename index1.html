@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chakku & Forever ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-top: 40px;
+        }
+
+        .section {
+            padding: 50px 20px;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.2);
+            padding: 25px;
+            margin: 25px auto;
+            width: 85%;
+            border-radius: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 220px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+            background: white;
+            color: #ff4f81;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #ffe6f0;
+        }
+
+        .heart {
+            position: fixed;
+            bottom: -10px;
+            font-size: 20px;
+            animation: float 6s infinite ease-in;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(-800px); opacity: 0; }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Background Music (replace link if needed) -->
+<audio id="loveSong">
+    <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<div class="section">
+    <h1>Happy Valentine's Day, Chakku ❤️</h1>
+    <h2>Our First Valentine As Husband & Wife 💍</h2>
+</div>
+
+<div class="section box">
+    <h2>Our Love Story 📖</h2>
+    <p>
+        We met in school… two kids who didn’t know  
+        we were writing our forever story.  
+
+        In 2016, we fell in love ❤️  
+
+        And on 14th September 2025,  
+        I married my best friend.  
+
+        From school corridors…  
+        to wedding vows…  
+
+        From crush to husband…  
+        You have always been my Chakku 🥹💕  
+
+        This is our first Valentine's Day after marriage,  
+        and I still choose you. Every single day.
+    </p>
+</div>
+
+<div class="section box">
+    <h2>Our Beautiful Memories 📸</h2>
+
+    <div class="gallery">
+        <img src="photo1.jpg">
+        <img src="photo2.jpg">
+        <img src="photo3.jpg">
+        <img src="photo4.jpg">
+    </div>
+
+    <p>Every picture with you is my favorite memory 💖</p>
+</div>
+
+<div class="section box">
+    <h2>Play Our Love Song 🎵</h2>
+    <button onclick="document.getElementById('loveSong').play()">
+        Play Song
+    </button>
+</div>
+
+<div class="section box">
+    <h2>Click For My Promise 💌</h2>
+    <button onclick="showPromise()">Click Me</button>
+    <p id="promise"></p>
+</div>
+
+<script>
+function showPromise() {
+    document.getElementById("promise").innerHTML =
+    "Chakku, I promise to love you in every version of life — in laughter, in silence, in chaos, in dreams. This is just the beginning of our forever. 💍❤️";
+}
+
+// Floating hearts
+setInterval(function(){
+    var heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
+    document.body.appendChild(heart);
+    setTimeout(function(){
+        heart.remove();
+    },6000);
+},500);
+</script>
+
+</body>
+</html>
